@@ -1,0 +1,60 @@
+//hourly
+// This is YourCabs booking broadcast. Broadcast for 4 hours and 40 kilometres package at three thirty in the evening today. Pickup from Marthahalli. Rate Rupees 1250. 
+// Commision 15 percent
+// Press 1 to accept and 0 to reject. 
+
+//p2p metred
+// This is YourCabs booking broadcast. Broadcast for a point to point trip at 3.30 evening today. Pickup from Marthahalli and drop to Ulsoor. Rate: First five kilometres 150 and Rupees 12 point five per kilometre
+// Commision 15 percent
+// Press 1 to accept and 0 to reject. 
+
+//p2p fixed
+// This is YourCabs booking broadcast. Broadcast for a point to point AC trip at 3.30 evening today. Pickup from Marthahalli and drop to Airport. Rate: six hundred and fifty fixed price. Overhead carrier needed.
+// Commision 15 percent
+// Press 1 to accept and 0 to reject. 
+
+main()
+   get package type
+   get pickup time
+   get pickup day
+   get pickup time of day
+   get pickup area id
+   get cooling flag
+   get carrier flag
+   
+   
+   for p2p 
+		get drop area id
+        for p2p metered
+			get base price
+			get base slab kilometres
+		for p2p fixed
+    		get fixed price
+			
+   for package
+     get max hours
+	 get max kms
+	 get package price 
+
+   fetch_static_soundbyte()
+   generate_package_name_soundbyte()
+   generate_pickupdatetime_sounbyte()
+   generate_cooling_type_soundbyte()
+   generate_pickup_drop_area_soundbyte()
+   generate_rate_soundbyte()
+   generate_ohcarrier_soundbyte()
+   
+   concatenate_soundbytes()
+   
+   store_booking_mp3_file()
+   
+   get_commission_rate
+   generate_commission_soundbyte()
+   store_commission_mp3_file()
+   
+   send path to booking mp3
+   send path to commission mp3
+       
+   
+   
+   
